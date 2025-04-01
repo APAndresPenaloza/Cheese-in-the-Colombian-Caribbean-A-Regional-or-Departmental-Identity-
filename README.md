@@ -99,7 +99,7 @@ SIMPER analysis is performed to identify the variables contributing to the diffe
 simper_result_departamento <- simper(datos_estandarizados, group = datos$Departamento, method = "manhattan")
 ```
 
-##Results
+## Results
 The results of the statistical tests, including MANOVA, PERMANOVA, and SIMPER, will help determine if the cheeses from different departments are sufficiently homogeneous to justify the implementation of a shared designation of origin.
 
 Results from the SIMPER analysis are saved in the following file:
