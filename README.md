@@ -45,3 +45,5 @@ Para instalar todos los paquetes necesarios, puedes ejecutar el siguiente códig
 ```r
 install.packages(c("vegan", "MVN", "ggplot2", "factoextra", "dplyr", "readxl", "car", "multcomp", "biotools", "rstatix", "openxlsx"))
 install_github("pmartinezarbizu/pairwiseAdonis/pairwiseAdonis")
+
+
