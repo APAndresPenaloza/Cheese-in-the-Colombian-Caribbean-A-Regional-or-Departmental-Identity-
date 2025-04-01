@@ -1,6 +1,8 @@
 
-# Limpiar el entorno
-rm(list = ls())
+# LIMPIAR ENTORNO Y DESCARGAR-CARGAR LIBRERÍAS
+rm(list = ls())  
+graphics.off()   
+cat("\014")  
 
 # Cargar las librerías necesarias
 library(dplyr)
@@ -21,7 +23,7 @@ install_github("pmartinezarbizu/pairwiseAdonis/pairwiseAdonis")
 library(pairwiseAdonis)
 
 # Cargar los datos desde un archivo Excel
-datos <- read_excel("C:/Users/UNIMAG/Downloads/ARTICULO 2/datos.xlsx", sheet = "GLM", range = "A1:M82")
+datos <- read_excel("D:/GRUPO/Desktop/Coast Cheese/Downloads/ARTICULO 2/datos.xlsx", sheet = "GLM", range = "A1:M82")
 
 # Convertir las variables categóricas en factores
 datos <- datos %>%
@@ -130,5 +132,5 @@ simper_result_departamento <- simper(datos_estandarizados, group = datos$Departa
 simper_df_departamento <- extract_simper_df(simper_result_departamento)
 
 # Exportar los resultados de SIMPER para Departamentos a un archivo CSV
-write.csv(simper_df_departamento, file = "C:/Users/UNIMAG/Downloads/ARTICULO 2/simper_results_departamento.csv", row.names = FALSE)
+write.csv(simper_df_departamento, file = "D:/GRUPO/Desktop/Coast Cheese/Downloads/ARTICULO 2/simper_results_departamento.csv", row.names = FALSE)
 
