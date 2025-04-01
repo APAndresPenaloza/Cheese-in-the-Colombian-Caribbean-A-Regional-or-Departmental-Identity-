@@ -15,32 +15,32 @@ The statistical analysis includes **MANOVA** to test for significant differences
 - **Análisis de varianza permutacional (PERMANOVA)**: Para evaluar la variabilidad de los datos entre diferentes grupos.
 - **Análisis de similitud porcentual (SIMPER)**: Para identificar qué variables contribuyen significativamente a las diferencias entre grupos.
 
-## Contenido del Proyecto
+## Project Content
 
-- **Datos**: Contiene las muestras de queso costeño con variables fisicoquímicas como humedad, grasa, proteína, sal, entre otras.
-- **Código en R**: Scripts para el preprocesamiento de los datos, pruebas estadísticas, y visualización de los resultados.
-- **Resultados**: Interpretación de los análisis realizados, que incluye gráficos de análisis de componentes principales (PCA) y dendrogramas de agrupamiento.
+- **Data**: Contains the cheese samples with physicochemical variables such as moisture, fat, protein, salt, etc.
+- **R Code**: Scripts for data preprocessing, statistical tests, and results visualization.
+- **Results**: Interpretation of the analyses, including Principal Component Analysis (PCA) plots and clustering dendrograms.
 
-## Requisitos
+## Requirements
 
-Este proyecto requiere **R** y varios paquetes para ejecutar los análisis. Los principales paquetes utilizados en este proyecto son:
+This project requires **R** and several packages to execute the analyses. The main packages used in this project are:
 
-- **vegan**: Para realizar el análisis de PERMANOVA y SIMPER.
-- **MVN**: Para pruebas de normalidad multivariada.
-- **ggplot2**: Para visualización de los resultados.
-- **factoextra**: Para realizar análisis de clustering y PCA.
-- **dplyr**: Para manipulación de datos.
-- **readxl**: Para importar archivos Excel.
-- **car**: Para la prueba de Box's M.
-- **multcomp**: Para comparaciones múltiples.
-- **biotools**: Utilidades para análisis biológicos.
-- **rstatix**: Funciones estadísticas adicionales.
-- **devtools**: Para instalar paquetes desde GitHub.
-- **openxlsx**: Para leer y escribir archivos Excel.
+- **vegan**: For PERMANOVA and SIMPER analysis.
+- **MVN**: For multivariate normality tests.
+- **ggplot2**: For data visualization.
+- **factoextra**: For clustering and PCA analysis.
+- **dplyr**: For data manipulation.
+- **readxl**: For importing Excel files.
+- **car**: For Box's M test.
+- **multcomp**: For multiple comparisons.
+- **biotools**: Biological analysis utilities.
+- **rstatix**: Additional statistical functions.
+- **devtools**: To install packages from GitHub.
+- **openxlsx**: To read and write Excel files.
 
-### Instalación de paquetes en R
+### Installing Required Packages in R
 
-Para instalar todos los paquetes necesarios, puedes ejecutar el siguiente código:
+To install all the necessary packages, you can run the following code:
 
 ```r
 install.packages(c("vegan", "MVN", "ggplot2", "factoextra", "dplyr", "readxl", "car", "multcomp", "biotools", "rstatix", "openxlsx"))
